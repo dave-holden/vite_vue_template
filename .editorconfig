@@ -1,0 +1,14 @@
+root=true
+
+[*]
+charset = utf-8
+max_line_length = 120
+ij_visual_guides = 120
+end_of_line = lf
+indent_style = space
+indent_size = 2
+
+# We are not running ESLint for JSON files, but we need to maintain the same style
+[*.json]
+indent_style = space
+indent_size = 2

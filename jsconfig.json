@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "checkJs": false,                                                             /* Report errors in .js files. */
+      "module": "esnext",
+      "moduleResolution": "node", 
+      "paths": {
+        "@/*": ["src/*"],
+        "@components/*": ["components/*"],
+      },
+      "resolveJsonModule": true,
+      "target": "esnext",
+    },
+    "include": ["src/**/*.js", "src/**/*.d.ts", "src/**/*.jsx", "src/**/*.vue"],
+    "exclude": [
+        "node_modules", 
+        "**/node_modules", 
+        "dist",
+
+        ".vscode",
+        "coverage",
+        "jspm_packages",
+        "tmp",
+        "temp",
+        ".npm",
+        ".yarn"
+    ]
+  }
