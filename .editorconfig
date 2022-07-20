@@ -1,5 +1,7 @@
-root=true
+# top-most EditorConfig file
+root = true
 
+# Unix-style newlines with a newline ending every file
 [*]
 charset = utf-8
 max_line_length = 120
@@ -7,8 +9,13 @@ ij_visual_guides = 120
 end_of_line = lf
 indent_style = space
 indent_size = 2
+insert_final_newline = true
 
 # We are not running ESLint for JSON files, but we need to maintain the same style
-[*.json]
-indent_style = space
-indent_size = 2
+# [*.json]
+# indent_style = space
+# indent_size = 2
+
+# Set default charset
+#[*.{js,py}]
+#charset = utf-8

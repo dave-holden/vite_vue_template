@@ -1,3 +1,5 @@
+// https://code.visualstudio.com/docs/languages/jsconfig
+// https://developpaper.com/jsconfig-what-exactly-does-json-do/
 {
     "compilerOptions": {
       "baseUrl": ".",
@@ -5,13 +7,22 @@
       "module": "esnext",
       "moduleResolution": "node", 
       "paths": {
-        "@/*": ["src/*"],
-        "@components/*": ["components/*"],
+        "@/*": [
+          "src/*"
+        ],
+        "@components/*": [
+          "components/*"
+        ],
       },
       "resolveJsonModule": true,
       "target": "esnext",
     },
-    "include": ["src/**/*.js", "src/**/*.d.ts", "src/**/*.jsx", "src/**/*.vue"],
+    "include": [
+      "src/**/*.js", 
+      "src/**/*.d.ts", 
+      "src/**/*.jsx", 
+      "src/**/*.vue"
+    ],
     "exclude": [
         "node_modules", 
         "**/node_modules", 
